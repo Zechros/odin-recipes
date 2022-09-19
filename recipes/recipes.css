@@ -5,7 +5,7 @@ body{
     max-height: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background.jpg);
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(236, 206, 206);
     padding: 20px;
 }
 
@@ -28,19 +28,37 @@ nav{
 }
 
 #mainSection{
-border-radius: 8px;
 max-width: 100%;
 height: auto;
+display: flex;
 }
 
-#lasagna{
-max-width: 80%;
+.dishContainer{
+    display: flex;
+    padding: 10rem;
+    margin: auto;
+}
+.dishes{
+    background-color: #2f2f2f61;
+    padding: 2.5rem;
+}
+.dishes h1{
+    padding: 5px;
+    text-align: center;
+}
+.dishes img{
+max-width: 100%;
 border: 5px solid rgb(59, 59, 58);
+transition: 0.3s;
+cursor: pointer;
+}
+.dishes img:hover{
+    transform: scale(1.1);
 }
 
 h1{
     font-size: 32px;
 }
-h2{
+h2{ 
     font-size: 30px;
 }
