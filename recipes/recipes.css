@@ -6,7 +6,6 @@ body{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background.jpg);
     box-sizing: border-box;
     color: rgb(236, 206, 206);
-    padding: 20px;
 }
 /**************/
 /* Navigation */
@@ -35,71 +34,72 @@ nav{
 /**************/
 
 #mainSection{
-max-width: 100%;
-height: auto;
-display: flex;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .dishContainer{
     display: flex;
-    padding: 10rem;
+    padding: 5rem 0;
     margin: auto;
 }
 .dishes{
     background-color: #2f2f2f61; /*transparent background for the dishes*/
     padding: 2.5rem;
 }
-.dishes h1{
-    padding: 5px;
-    text-align: center;
-}
 .dishes img{
-max-width: 100%;
-border: 5px solid rgb(59, 59, 58);
-transition: 0.3s;
-cursor: pointer;
+    max-width: 100%;
+    border: 5px solid rgb(59, 59, 58);
+    transition: 0.3s;
+    cursor: pointer;
 }
 .dishes img:hover{
     transform: scale(1.1); /*scaling animation for hovering the images*/
 }
 
 h1{
-    font-size: 32px;
+    font-size: 27px;
 }
 h2{ 
-    font-size: 30px;
+    font-size: 24px;
 }
-
+.dishes .text{
+    max-width: 75%;
+}
 /* Sections end */
 
 /******************/
 /***Social Media***/
 /******************/
-
 .socialMedia{
-display: flex;
-position: relative;
-justify-content: space-between;
-align-items: center;
-margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    transform: scale(0.75);
 }
-
-.socialMedia img{    
-transition: 0.3s;
+.socialMedia ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
 }
-
-.socialMedia img:hover{
-cursor: pointer;
-transform: scale(1.2);
+.socialMedia ul li{
+    background-color: #2f2f2f61;
+    padding: 1rem 2rem;
+    border-radius: 5px;
 }
-
-.socialMedia p{
-font-size: 12px;
-font-family: RobotoLight;
+.socialMedia ul li a{
+    text-decoration: none;
+    color: white;
 }
-
-.socialMedia a{
-text-decoration: none;
+.socialMedia ul li img{
+    transition: 0.3s;
+    filter: opacity(75%);
 }
-
+.socialMedia ul li img:hover{
+    transform: scale(1.1);
+    filter: opacity(100%);
+}
   /* Social Media end*/
