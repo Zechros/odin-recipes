@@ -8,7 +8,9 @@ body{
     color: rgb(236, 206, 206);
     padding: 20px;
 }
-
+/**************/
+/* Navigation */
+/**************/
 nav{
     display: flex;
     justify-content: left;
@@ -26,6 +28,11 @@ nav{
     transform: scaleY(1.2);
     text-decoration: 2px underline #2f2f2f;
 }
+/* Nav end */
+
+/**************/
+/*  Sections  */
+/**************/
 
 #mainSection{
 max-width: 100%;
@@ -39,7 +46,7 @@ display: flex;
     margin: auto;
 }
 .dishes{
-    background-color: #2f2f2f61;
+    background-color: #2f2f2f61; /*transparent background for the dishes*/
     padding: 2.5rem;
 }
 .dishes h1{
@@ -53,7 +60,7 @@ transition: 0.3s;
 cursor: pointer;
 }
 .dishes img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /*scaling animation for hovering the images*/
 }
 
 h1{
@@ -62,3 +69,37 @@ h1{
 h2{ 
     font-size: 30px;
 }
+
+/* Sections end */
+
+/******************/
+/***Social Media***/
+/******************/
+
+.socialMedia{
+display: flex;
+position: relative;
+justify-content: space-between;
+align-items: center;
+margin: 5% 0;
+}
+
+.socialMedia img{    
+transition: 0.3s;
+}
+
+.socialMedia img:hover{
+cursor: pointer;
+transform: scale(1.2);
+}
+
+.socialMedia p{
+font-size: 12px;
+font-family: RobotoLight;
+}
+
+.socialMedia a{
+text-decoration: none;
+}
+
+  /* Social Media end*/
