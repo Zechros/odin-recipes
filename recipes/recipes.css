@@ -42,11 +42,12 @@ nav{
 
 .dishContainer{
     display: flex;
-    padding: 5rem 0;
     margin: auto;
+    background-color: #2f2f2f61;
+    border-radius: 50px;
 }
 .dishes{
-    background-color: #2f2f2f61; /*transparent background for the dishes*/
+     /*transparent background for the dishes*/
     padding: 2.5rem;
 }
 .dishes img{
